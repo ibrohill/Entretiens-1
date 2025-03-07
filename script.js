@@ -1,7 +1,7 @@
-// je cherche l'élément avec l'ID "iconDeBulbe" dans le DOM
+// je cherche l'élément avec l'ID "iconDeBulbe"
 var iconDeBulbe = document.getElementById("iconDeBulbe");
 
-// je vérifie si l'élément iconDeBulbe existe dans le DOM
+// je vérifie si l'élément iconDeBulbe existe
 if (iconDeBulbe) {
 
     // Crée un nouvel élément div qui servira à afficher le tooltip
