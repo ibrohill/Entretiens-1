@@ -1,23 +1,23 @@
-// je cherche l'élément avec l'ID "iconDeBulbe"
-var iconDeBulbe = document.getElementById("iconDeBulbe");
+// je cherche l'élément avec l'ID "iconDeBulle"
+var iconDeBulle = document.getElementById("iconDeBulle");
 
-// je vérifie si l'élément iconDeBulbe existe
-if (iconDeBulbe) {
+// je vérifie si l'élément iconDeBulle existe
+if (iconDeBulle) {
 
     // Crée un nouvel élément div qui servira à afficher le tooltip
     var tooltip = document.createElement("div");
 
     tooltip.className = "tooltip";
     // j'insère du contenu HTML dans le tooltip, incluant un lien pour "En savoir plus"
-    tooltip.innerHTML = "Ceci est une bulle de dialogue ! <br> <a href='#'>En savoir plus</a>";
-    // Ajoute le tooltip dans  l'élément de iconDeBulbe ?
-    iconDeBulbe.appendChild(tooltip);
+    tooltip.innerHTML = "bulle de dialogue pour teste ! <br> <a href='#'>En savoir plus</a>";
+    // Ajoute le tooltip dans  l'élément de iconDeBulle ?
+    iconDeBulle.appendChild(tooltip);
 
     // je declare une variable pour gérer le temps que doit faire le tooltip si la souris fais juste un passage dessus
     var hideTimeout;
 
-    // j'ajoute un écouteur d'événement sur l'icône iconDeBulbe
-    iconDeBulbe.addEventListener("mouseenter", function () {
+    // j'ajoute un écouteur d'événement sur l'icône iconDeBulle
+    iconDeBulle.addEventListener("mouseenter", function () {
         // Si la souris entre dans l'icône, j'annule le délai de masquage du tooltip
         clearTimeout(hideTimeout);
         //  visibilité du tooltip pour le rendre visible
@@ -33,7 +33,7 @@ if (iconDeBulbe) {
     });
 
     // Ajoute un écouteur d'événement sur l'icône (événement 'mouseleave')
-    iconDeBulbe.addEventListener("mouseleave", function () {
+    iconDeBulle.addEventListener("mouseleave", function () {
         // Si la souris quitte l'icône, commence un délai avant de masquer le tooltip
         hideTimeout = setTimeout(function () {
             // pour rendre le tooltip invisible après une 1 seconde
@@ -54,7 +54,7 @@ if (iconDeBulbe) {
     });
 
 } else {
-    // Si l'élément iconDeBulbe n'existe pas, l'erreur s affiche dans la console
-    console.error("iconDeBulbe n'existe pas.");
+    // Si l'élément iconDeBulle n'existe pas, l'erreur s affiche dans la console
+    console.error("iconDeBulle n'existe pas.");
 }
 
